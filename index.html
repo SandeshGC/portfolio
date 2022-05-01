@@ -1,27 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>GCSANDESH</title>
+    <title>SANDESH GC - HOME</title>
+    <!-- defining metadata -->
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='portfolio.css'>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <!--<script src='main.js'></script>-->
+    <meta name="author" content="Sandesh GC">
+    <meta name="keywords" content="Portfolio, Sandesh GC, Projects, Skills, About">
+    <meta name="description" content="Sandesh GC's portfolio site">
+    <!-- linking a stylesheet -->
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <!-- importing fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!--<script src='app.js'></script>-->
 </head>
 
 <body>
     <nav id="navbar">
         <a class="navbar-brand" href="#">SANDESH GC</a>
-        <div class="navbar-links">
-            <a class="navbar-link" href="#">HOME</a>
-            <a class="navbar-link" href="#about">ABOUT</a>
-            <a class="navbar-link" href="#blog">BLOG</a>
-            <a class="navbar-link" href="#projects">PROJECTS</a>
-            <a class="navbar-link" href="#contact">CONTACT</a>
+        <ul class="navbar-links"> <!--list of navbar links-->
+            <li><a class="navbar-link" href="#">HOME</a></li>
+            <li><a class="navbar-link" href="#about">ABOUT</a></li>
+            <li><a class="navbar-link" href="#projects">PROJECTS</a></li>
+            <li><a class="navbar-link" href="#contact">CONTACT</a></li>
             <button class="navbar-button">NAV</button>
         </div>
     </nav>
@@ -32,66 +37,44 @@
             <b>Sandesh GC.</b>
             <br> And, I am a web developer.
         </div>
-        <button class="red-oval-button">See More</button>
+        <!-- see more button -->
+        <button class="red-oval-btn"><a href="#about">See More</a></button>
     </section>
-    <section id="about">
+    <!-- end of intro section -->
+    <section id="about"> <!--beginning of about section-->
         <h2>About</h2>
         <div class="about-text">
-            I am a student pursuing Bachelor's degree in computer engineering. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi eaque, ullam iure cumque possimus pariatur omnis deserunt sapiente vel, debitis quo similique aut. Quas praesentium dolor,
-            voluptatum consectetur vero eveniet?
+            I am a student pursuing Bachelor's degree in computer engineering in IOE Pashchimanchal Campus, Pokhara.
         </div>
-    </section>
-    <section id="blog">
-        <h2>Blog</h2>
-        <div class="blog-content1">
-            <img src="blog-image.jpg" alt="" class="blog-image">
-            <span class="blog-text">
-                Here comes the content for first blog. This place should have some text and, it does. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quo accusantium distinctio quisquam quibusdam placeat debitis similique sed numquam cumque, exercitationem voluptatem ipsam, perferendis sapiente veniam sunt deserunt iure blanditiis.
-            </span>
-        </div>
-        <div class="blog-content2">
-            <img src="blog-image.jpg" alt="" class="blog-image">
-            <span class="blog-text">
-                This is another blog text. Here I am writing just some random text to fill in the blanks. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur saepe, quos ducimus fugiat magni voluptatem beatae porro incidunt molestias ab odio deserunt laboriosam. Ducimus, minus? Est commodi nostrum minima totam!
-            </span>
-        </div>
-
-    </section>
+    </section> 
+    <!-- end of about section -->
     <section id="projects">
         <h2>Projects</h2>
-        <img src="my-photo.jpg" alt="A picture of Sandesh GC." class="my-photo">
-        <div class="project-list">
-            <div>
-                <img class="project-image" src="project1.jpg" alt="">
-                <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, non alias. Culpa voluptas.</p>
-            </div>
-            <div>
-                <img class="project-image" src="project2.jpg" alt="">
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vitae sapiente dignissimos delectus.</p>
-            </div>
-            <div>
-                <img class="project-image" src="project3.jpg" alt="">
-                <p class="project-description"> sit amet consectetur adipisicing elit. Suscipit modi enim distinctio tempore repellat solutam ut ab earum.</p>
+        <ul id = "list-of-projects">
+            <li><a href= "https://www.gauramobile.com" target = "_blank">gauramobile.com</a></li>
+        </ul>
+    </section>
             </div>
             <div>
                 <img class="project-image" src="project4.jpg" alt="">
-                <p class="project-description">Exercitationem maiores officiis, sapiente temporibus consequuntur numquam, nobis, adipisci enim fuga quae.</p>
+                <p class="project-desc">Exercitationem maiores officiis, sapiente temporibus consequuntur numquam, nobis, adipisci enim fuga quae.</p>
             </div>
         </div>
     </section>
+    <!-- end of projects section -->
     <section id="contact">
         <h2>Contact</h2>
-        <form>
             <label for="name">Name: </label>
             <input name="username" placeholder="Your name" class="contact-form-input">
             <label for="email">E-mail: </label>
             <input name="email" placeholder="Your e-mail address" class="contact-form-input">
             <label for="message">Message: </label>
             <textarea name="message" placeholder="Write your message" class="contact-form-input"></textarea>
-            <button type="submit" name="submit" class="red-oval-button">Send Message</button>
-        </form>
-
+            <button id="submit-contact-form" name="submit" class="red-oval-btn">Send Message</button>
+        <a href="#top"><button type = "submit" id="goto-top-btn" class="red-oval-btn">Goto TOP </button></a>
     </section>
+    <!-- end of contact section -->
+    <script src = "./app.js"></script>
 </body>
 
 </html>
