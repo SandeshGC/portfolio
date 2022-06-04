@@ -13,7 +13,6 @@ html {
 ul.navbar-links {
     list-style-type: none;
 }
-
 a {
     color: white;
     text-decoration: none;
@@ -188,7 +187,6 @@ h2 {
     .navbar-links {
         display: none;
     }
-
     .project-list {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
