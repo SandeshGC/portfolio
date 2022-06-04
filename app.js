@@ -1,5 +1,5 @@
-    let submitBtn = document.querySelector("#submit-contact-form");
+    const submitBtn = document.getElementById("submit-contact-form");
     submitBtn.addEventListener('click', function (event){
-        console.log(event.cancelable);
+//         console.log("Button clicked")
         event.preventDefault();
     })

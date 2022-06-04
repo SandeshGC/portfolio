@@ -13,10 +13,9 @@
     <!-- linking a stylesheet -->
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <!-- importing fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <!--<script src='app.js'></script>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -48,8 +47,12 @@
         </div>
     </section> 
     <!-- end of about section -->
-    <section id="projects">disc"> sit amet consectetur adipisicing elit. Suscipit modi enim distinctio tempore repellat solutam ut ab earum.</p>
-            </div>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul id = "list-of-projects">
+            <li><a href= "https://www.gauramobile.com" target = "_blank">gauramobile.com</a></li>
+        </ul>
+  </section>
             <div>
                 <img class="project-image" src="project4.jpg" alt="">
                 <p class="project-desc">Exercitationem maiores officiis, sapiente temporibus consequuntur numquam, nobis, adipisci enim fuga quae.</p>
@@ -65,11 +68,11 @@
             <input name="email" placeholder="Your e-mail address" class="contact-form-input">
             <label for="message">Message: </label>
             <textarea name="message" placeholder="Write your message" class="contact-form-input"></textarea>
-            <button type="submit" id="submit-contact-form" name="submit" class="red-oval-btn">Send Message</button>
-        <a href="#top"><button id="goto-top-btn" class="red-oval-btn">Goto TOP </button></a>
+            <button id="submit-contact-form" name="submit" class="red-oval-btn">Send Message</button>
+        <a href="#top"><button type = "submit" id="goto-top-btn" class="red-oval-btn">Goto TOP </button></a>
     </section>
     <!-- end of contact section -->
-
+    <script src = "./app.js"></script>
 </body>
 
 </html>
